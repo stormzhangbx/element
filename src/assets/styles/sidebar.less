@@ -1,0 +1,40 @@
+@import 'variables';
+#app {
+  //滚动条
+  .el-scrollbar {
+    height: 100%;
+  }
+
+  .scrollbar-wrapper {
+    overflow-x: hidden !important;
+  }
+
+  .el-scrollbar__bar.is-vertical {
+    right: 0;
+  }
+
+  // menu hover
+  .el-menu {
+    background-color: #304156;
+    border: none;
+  }
+  .submenu-title-noDropdown,
+  .el-submenu__title {
+    &:hover {
+      background-color: @menuHover !important;
+    }
+  }
+
+  .is-active>.el-submenu__title {
+    color: @subMenuActiveText !important;
+  }
+
+  .el-submenu .el-menu-item {
+    //min-width: @sideBarWidth !important;
+    background-color: @subMenuBg !important;
+
+    &:hover {
+      background-color: @subMenuHover !important;
+    }
+  }
+}
