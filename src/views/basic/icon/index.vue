@@ -1,5 +1,8 @@
 <template>
-  <div>Icon</div>
+  <div>
+    <i class="el-icon-edit"></i>
+    <el-button type="primary" icon="el-icon-search">搜索</el-button>
+  </div>
 </template>
 
 <script>
@@ -9,5 +12,7 @@ export default {
 </script>
 
 <style scoped>
-
+  i {
+    margin: 0 20px;
+  }
 </style>

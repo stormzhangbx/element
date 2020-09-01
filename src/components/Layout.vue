@@ -8,7 +8,7 @@
           <el-scrollbar wrap-class="scrollbar-wrapper">
             <el-menu
               router
-              default-active="/basic/layout"
+              :default-active="defaultActive"
               :background-color="variables.menuBg"
               :text-color="variables.menuText"
               :active-text-color="variables.menuActiveText"
@@ -52,6 +52,7 @@ export default {
   name: 'Layout',
   data () {
     return {
+      defaultActive: '/basic/layout'
     }
   },
   computed: {
@@ -62,6 +63,10 @@ export default {
       console.log(111, variables)
       return variables
     }
+  },
+  created () {
+    // 此处不能用mounted钩子
+    this.defaultActive = location.hash.substring(1)
   }
 }
 </script>
@@ -86,6 +91,7 @@ export default {
       //主体
       &>main {
         height: calc(100vh - 60px);
+        //overflow-x: hidden;
       }
     }
 
