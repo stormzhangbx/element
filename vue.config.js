@@ -4,10 +4,14 @@ module.exports = {
   devServer: {
     port: 9000,
     proxy: {
-      '/': {
-        target: 'http://localhost:8080',
+      '/icity': {
+        target: 'https://yqfkgzjl.szft.gov.cn',
         changeOrigin: true
       }
+      // '/': {
+      //   target: 'http://localhost:8080',
+      //   changeOrigin: true
+      // },
     }
   },
 

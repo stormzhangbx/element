@@ -331,6 +331,18 @@ export const menu = [
         component: 'others/drawer/index'
       }
     ]
+  },
+  {
+    meta: { icon: 'medal', title: 'AMap' },
+    path: '/map',
+    component: 'Empty',
+    children: [
+      {
+        meta: { icon: 'menu', title: '基础' },
+        path: 'basic',
+        component: 'amap/base/index'
+      }
+    ]
   }
 ]
 

@@ -19,7 +19,7 @@ service.interceptors.request.use(
 )
 
 service.interceptors.response.use(response => {
-  console.log(response)
+  console.log('response', response)
   // 对响应数据做点什么
   const code = response.status
   if (code < 200 || code > 300) {

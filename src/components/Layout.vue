@@ -60,7 +60,7 @@ export default {
       return menu
     },
     variables () {
-      console.log(111, variables)
+      // console.log(111, variables)
       return variables
     }
   },

@@ -10,4 +10,10 @@ export function select (id) {
   })
 }
 
-export default { select }
+export function getCode () {
+  return request({
+    method: 'get',
+    url: '/icity/sys/getCheckCode'
+  })
+}
+export default { select, getCode }
